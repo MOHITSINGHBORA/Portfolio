@@ -29,7 +29,7 @@ nav {
 }
 
 nav .name {
-    font-size: 30px;
+    font-size: 1.8rem;
     background: #020024;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 199, 1) 0%, rgba(0, 212, 255, 1) 100%);
     -webkit-background-clip: text;
@@ -131,7 +131,6 @@ nav .name {
         display: flex;
         position: relative;
         padding: 0 10px;
-
         gap: 0;
         justify-content: space-between;
         align-items: center;
@@ -140,16 +139,15 @@ nav .name {
     nav .name {
         width: 30%;
         white-space: normal;
-        font-size: 20px;
+        font-size: 0.8rem;
         overflow: hidden;
         background: #020024;
         background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 199, 1) 0%, rgba(0, 212, 255, 1) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
-
         position: absolute;
-        left: 50%;
+        left: 55%;
         transform: translateX(-50%);
     }
 
@@ -231,17 +229,17 @@ main {
 
 
 .first-section .p1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .first-section .p2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #808080;
 }
 
 .first-section .p3 {
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #a2a2a2;
     text-align: center;
 }
@@ -257,25 +255,22 @@ main {
 
 .first-section-button a {
     text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+     border-radius: 7px;
 }
 
 .first-section-button .button1 {
-    font-weight: 400;
     color: white;
     background-color: #0080ff;
-    border-radius: 7px;
     padding: 9px 17px;
-    text-align: center;
 
 }
 
 .first-section-button .button2 {
-    font-weight: 400;
     color: #0080ff;
-    border-radius: 7px;
     border: 2px solid #0080ff;
     padding: 7px 17px;
-    text-align: center;
 }
 
 .first-section-icons {
@@ -286,6 +281,7 @@ main {
 }
 
 .first-section-icons i {
+    color: black;
     font-size: 25px;
 }
 
@@ -344,7 +340,7 @@ main {
 
 .second-section .about-me {
     margin: 50px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #353535;
 }
@@ -365,12 +361,14 @@ main {
 }
 
 .second-section .card img {
-    height: 500px;
-    border-radius: 10px;
+    height: 210px;
+    width: 400px;
+    border-radius: 100%;
+     object-fit: cover;
 }
 
 .left-card p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #8a8a8a;
     text-align: left;
 }
@@ -475,13 +473,13 @@ main {
 }
 
 .third-section .p1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #353535;
 }
 
 .third-section .p2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #8a8a8a;
 }
 
@@ -512,9 +510,9 @@ main {
 }
 
 .third-section .tech-heading{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #353535;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .third-section .card ul {
@@ -524,7 +522,7 @@ main {
 
 
 .third-section .card li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #8a8a8a;
 }
 
@@ -615,13 +613,13 @@ main {
 
 
 .fourth-section .p1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #353535;
 }
 
 .fourth-section .p2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #8a8a8a;
 }
 
@@ -646,6 +644,15 @@ main {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
 }
 
+.fourth-section .card .p1{
+    font-size: 1.1rem;
+    background-color: ;
+}
+
+.fourth-section .card .p2{
+    font-size: 1rem;
+}
+
 .fourth-section .tech-used ul {
     display: flex;
     flex-wrap: wrap;
@@ -667,13 +674,33 @@ main {
     cursor: default;
 }
 
-
-
 .fourth-section .code-demo-button {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
+
+.fourth-section .card .code-button, .demo-button{
+    text-decoration: none;
+}
+
+.fourth-section .card .code-button{
+     width: 80px;
+     color: white;
+     text-align: center;
+     background-color: #0080ff;
+     border-radius: 8px;
+}
+
+.fourth-section .card .demo-button{
+     width: 80px;
+     text-align: center;
+     border-radius: 8px;
+     border: 2px solid #0080ff;
+     color: #0080ff;
+     
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px){
 
@@ -771,14 +798,14 @@ main {
 }
 
 .fifth-section .p1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #353535;
 }
 
 
 .fifth-section .p2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #8a8a8a;
 }
 
@@ -803,15 +830,14 @@ main {
    
 }
 
-
 .fifth-section .card-1 .p1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #353535;
 }
 
 .fifth-section .card-1 .p2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #8a8a8a;
 }
 
@@ -823,7 +849,7 @@ main {
 }
 
 .fifth-section .card-1 i {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .fifth-section .card-1 .logoanddetails {
@@ -832,17 +858,6 @@ main {
     gap: 20px;
 
 
-}
-
-.fifth-section .card-1 .logosdetails {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.fifth-section .logosdetails p {
-    color: #8a8a8a;
 }
 
 
@@ -1040,9 +1055,13 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    color: #5e5e5e;
-    font-size: 1.5rem;
     width: 30%;
+   
+}
+
+.footer-card .card-2 a{
+   color: #5e5e5e;
+   font-size: 1.5rem;
 }
 
 footer .line {
@@ -1076,8 +1095,8 @@ footer .p3 {
      color: #5e5e5e;
 }
 
- .footer-card .card-2 i{
-    font-size: 30px;
+ .footer-card .card-2 a{
+    font-size: 1.5rem;
  }
 
  footer .p3 {
@@ -1109,16 +1128,38 @@ footer .p3 {
  }
 
 .footer-card .card-2 {
-    
-    font-size: 1rem;
     width: 100%;
  }
 
- .footer-card .card-2 i{
-    font-size: 30px;
+ .footer-card .card-2 a{
+     font-size: 1.5rem;
  }
 
  footer .p3 {
    font-size: 1.2rem;
  }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 199, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }

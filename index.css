@@ -53,6 +53,10 @@ nav .name {
     color: #808080;
 }
 
+.nav-button a:not(.download-button):hover{
+    color: #3b3b3b;
+}
+
 .nav-button .download-button {
     padding: 5px 15px;
     border-radius: 8px;
@@ -334,12 +338,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 700px;
+    height: 600px;
 
 }
 
 .second-section .about-me {
-    margin: 50px;
+    margin-top: 30px;
     font-size: 2rem;
     font-weight: 500;
     color: #353535;
@@ -361,10 +365,9 @@ main {
 }
 
 .second-section .card img {
-    height: 210px;
+    height: 400px;
     width: 400px;
-    border-radius: 100%;
-     object-fit: cover;
+    border-radius: 5%;
 }
 
 .left-card p {
@@ -377,11 +380,15 @@ main {
 
     .second-section {
     margin-top: 50px;
-    height: 900px;
+    height: 850px;
+    justify-content: center;
+    gap: 20px;
+     
+     
   }
  
     .second-section .about-me {
-    margin: 20px;
+    margin-top: 0px;
     font-size: 1.8rem;
     font-weight: 500;
  }
@@ -392,12 +399,14 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85%;
-    gap: 40px;
+    height: 80%;
+    gap: 30px;
+    margin-top: 20px;
  }
 
  .second-section .card img {
     height: 300px;
+    width: 250px;
     border-radius: 10px;
  }
 
@@ -417,9 +426,12 @@ main {
 }
 
 @media (max-width: 768px){
+
     .second-section {
-    margin-top: 50px;
-    height: 900px;
+    margin-top:50px;
+    height: 870px;
+    justify-content:center;
+    gap: 20px;
   }
  
     .second-section .about-me {
@@ -436,12 +448,12 @@ main {
     align-items: center;
     width: 100%;
     height: 80%;
-    gap: 30px;
+    gap: 20px;
  }
 
  .second-section .card img {
-    height: 180px;
-    width: 140px;
+    height: 200px;
+    width: 170px;
     border-radius: 10px;
  }
 
@@ -469,7 +481,7 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    height: 600px;
+    height: 500px;
 }
 
 .third-section .p1 {
@@ -488,25 +500,36 @@ main {
     display: flex;
     justify-content: center;
     gap: 70px;
-    height: 55%;
+    height: 65%;
     width: 100%;
+    margin-top: 20px;
 }
 
 
 .third-section .first-card,
 .second-card,
 .third-card {
-    height: 110%;
+    height: 100%;
     width: 26%;
     padding: 1.8rem;
     border-radius: 12px;
     line-height: 1.9;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
-
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12); 
+    transition: transform 0.5s ease;
 }
 
+.third-section .first-card:hover,
+.third-section .second-card:hover,
+.third-section .third-card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px rgba(0, 128, 255, 0.6);
+}
 .third-section i {
     font-size: 2rem;
+    background-color: #0080ff;
+    color: white;
+    padding: 7px;
+    border-radius: 7px;
 }
 
 .third-section .tech-heading{
@@ -564,7 +587,8 @@ main {
 
     .third-section {
     gap: 20px;
-    height: 1500px;
+    height: 1150px;
+    margin-top: 50px;
  }
     .third-section .p1 {
     font-size: 1.8rem;
@@ -580,7 +604,7 @@ main {
     flex-direction: column;
     gap: 30px;
     height: 90%;
-    width: 100%;
+    width: 90%;
  }
   
   .third-section .first-card,
@@ -628,7 +652,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 70px;
-    height: 55%;
+    height: 68%;
     width: 100%;
     margin-top: 20px;
 }
@@ -638,34 +662,55 @@ main {
 .card-3 {
     height: 100%;
     width: 26%;
-    padding: 1.8rem;
+    /* padding: 1.8rem; */
     border-radius: 12px;
     line-height: 1.9;
+    padding: 0; 
+    overflow: hidden;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s ease;
 }
 
+.fourth-section .card-1:hover,
+.fourth-section .card-2:hover,
+.fourth-section .card-3:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px rgba(0, 128, 255, 0.6);
+}
+
+ .fourth-section .card img {
+    width: 100%;
+    height: 180px;               
+    object-fit: cover;           
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+
 .fourth-section .card .p1{
-    font-size: 1.1rem;
-    background-color: ;
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 0px 20px;
 }
 
 .fourth-section .card .p2{
     font-size: 1rem;
+    padding: 0px 20px;
 }
 
 .fourth-section .tech-used ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 0;
+    padding: 0px 20px;
     margin: 15px 0;
     list-style: none;
 }
 
 
 .fourth-section .tech-used ul li {
-    background-color: #3b6bcc;
-    color: #d5e1f8;
+    background-color: #898e93;
+    color: #f2f3f4;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -688,17 +733,26 @@ main {
      width: 80px;
      color: white;
      text-align: center;
-     background-color: #0080ff;
+     background-color: #3b6bcc;
      border-radius: 8px;
+}
+
+.fourth-section .card .code-button:hover{
+     background-color: #325baf;
 }
 
 .fourth-section .card .demo-button{
      width: 80px;
      text-align: center;
      border-radius: 8px;
-     border: 2px solid #0080ff;
-     color: #0080ff;
-     
+     border: 2px solid  #3b6bcc;
+     color:  #3b6bcc;
+}
+
+.fourth-section .card .demo-button:hover{
+     background-color: #8a8a8a;
+     color: white;
+     border-color: #8a8a8a;
 }
 
 
@@ -706,7 +760,7 @@ main {
 
     .fourth-section {
     margin-top: 50px;
-    height: 1200px;
+    height: 2100px;
  }
 
  .fourth-section .p1 {
@@ -725,20 +779,25 @@ main {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    height: 70%;
+    height: 85%;
     width: 100%;
     margin-top: 20px;
  }
 
  .fourth-section .card-1,
-.card-2,
-.card-3 {
-    height: 30%;
+ .card-2,
+ .card-3 {
+    height: 80%;
     width: 90%;
-    padding: 1.5rem;
+    
     border-radius: 12px;
     line-height: 1.9;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
+ }
+
+  .fourth-section .card img {
+    height: 350px;               
+    
  }
 
 }
@@ -748,7 +807,8 @@ main {
 
     .fourth-section {
     margin-top: 50px;
-    height: 1400px;
+    height: 1800px;
+    
  }
     
   .fourth-section .p1 {
@@ -756,32 +816,37 @@ main {
     
  }
 
-  .fourth-section .p2 {
+  .fourth-section .p2{
     font-size: 1.2rem;
     text-align: center;
  }
 
-  .fourth-section .card {
+  .fourth-section .card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    height: 80%;
-    width: 100%;
-    margin-top: 20px;
+    gap: 30px;
+    height: 90%;
+    width: 90%;
+     margin-top: 0px;
  }
 
   .fourth-section .card-1,
-.card-2,
-.card-3 {
-    height: 40%;
+  .card-2,
+  .card-3 {
+    height: 30%;
     width: 90%;
-    padding: 1.5rem;
     border-radius: 12px;
     line-height: 1.9;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
  }
+
+ .fourth-section .card-1 .p2,
+  .card-2 .p2,
+  .card-3 .p2{
+    text-align: left;
+  }
 
 }
 
@@ -823,7 +888,7 @@ main {
 .fifth-section .card-1,
 .fifth-section .card-2 {
     height: 100%;
-    width: 45%;
+    width: 40%;
     padding: 1.8rem;
     border-radius: 12px;
     line-height: 1.9;
@@ -856,8 +921,6 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
-
-
 }
 
 
@@ -907,6 +970,15 @@ main {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 199, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
 
+.fifth-section .card-2{
+    transition: transform 0.5s ease;
+}
+
+.fifth-section .card-2:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px rgba(0, 128, 255, 0.6);
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
 
 
@@ -943,7 +1015,7 @@ main {
  .fifth-section .card-1,
 .fifth-section .card-2 {
     height: 100%;
-    width: 90%;
+    width: 80%;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
     
  }
@@ -997,7 +1069,7 @@ main {
  .fifth-section .card-1,
 .fifth-section .card-2 {
     height: 100%;
-    width: 90%;
+    width: 80%;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.12);
     
  }
@@ -1016,6 +1088,7 @@ main {
 
  .fifth-section .card-1 .p2 {
     font-size: 1rem;
+    text-align: left;
      
  }
 
@@ -1146,7 +1219,7 @@ footer .p3 {
     right: 25px;
     width: 50px;
     height: 50px;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 199, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background-color: #3b6bcc;
     color: white;
     border-radius: 50%;
     display: flex;

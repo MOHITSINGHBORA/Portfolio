@@ -29,7 +29,7 @@ This portfolio showcases my skills, projects, and contact details with a clean U
 ---
 
 ## 📂 Folder Structure
-
+```
 Portfolio
 │
 ├── index.html
@@ -41,7 +41,7 @@ Portfolio
   ├── standigtocross.jpeg
   ├── website.png
   └── mohitsinghbora-resume.pdf
-  
+  ```
 ---
 
 ## 📬 Contact
